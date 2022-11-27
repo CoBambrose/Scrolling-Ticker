@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.ticker {
+  position: relative;
+  background-color: #0002;
+  width: 80%;
+  height: 100px;
+}
+
+.ticker__scroll {
+  position: absolute;
+  height: 100px;
+  width: 33.33%;
+  top: 0;
+  left: 33.33%;
+  animation: scroll 6s infinite linear;
+}
+
+.t-1 {
+  background-color: #f99;
+}
+
+.t-2 {
+  background-color: #9f9;
+  animation-delay: 3s;
+}
+
+.t-3 {
+  background-color: #ff9;
+  /* animation-delay: 6s; */
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(-100%);
+  } 100% {
+    transform: translateX(100%);
+  }
+}
